@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="script.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="container">
+		<div id="header" class="d-flex justify-content-center align-items-center text-white">Rock Paper Scissor</div>
+		<div class="p-4">
+			<div id="scores" class="d-flex justify-content-center align-items-center">
+				<div id="user" class="m-5 p-2 text-white text-center rounded">User</div>
+				<div id="userScore" class="m-3">0</div>
+				<div id="sign" class="m-3">:</div>
+				<div id="compScore" class="m-3">0</div>
+				<div id="comp" class="m-5 p-2 text-white text-center rounded">Comp</div>
+			</div>
+		</div>
+
+		<div id="options" class="pt-4 d-flex justify-content-center">
+			<button id="rock" class="choice mx-5 border-0" value="rock" onclick="main(this.value)">
+				<i class="fa fa-hand-grab-o rounded-circle"></i>
+			</button>
+
+			<button id="paper" class="choice mx-5 border-0" value="paper" onclick="main(this.value)">
+				<i class="fa fa-hand-paper-o rounded-circle"></i>
+			</button>
+
+			<button id="scissor" class="choice mx-5 border-0" value="scissor" onclick="main(this.value)">
+				<i class="fa fa-hand-scissors-o rounded-circle"></i>
+			</button>
+		</div>
+
+		<div class="p-5">
+			<div id="result" class="d-flex justify-content-center pt-5">
+				<div id="userResult">
+					<div id="userSign">
+						<i class="fa fa-handshake-o text-white text-center pt-4 rounded-circle"></i>
+					</div>
+					<h3 id="user_text" class="m-2 text-center">User</h3>
+				</div>
+
+				<div id="result_text" class="py-4 px-5">Select a choice.</div>
+
+				<div id="compResult">
+					<div id="compSign">
+						<i class="fa fa-handshake-o text-white text-center pt-4 rounded-circle"></i>
+					</div>
+					<h3 id="comp_text" class="m-2 text-center">Comp</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

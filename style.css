@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    background-color: lightgray;
+}
+
+#header {
+    height: 10vh;
+    background-color: #22569f;
+    font-size: 2.7rem;
+}
+
+#user,
+#comp {
+    width: 100px;
+    background-color: #d32F2F;
+    font-size: 1.3rem;
+}
+
+#userScore,
+#sign,
+#compScore {
+    color: black;
+    font-size: 5.2rem;
+}
+
+.choice {
+    background-color: transparent;
+}
+
+.choice i {
+    height: 150px;
+    width: 150px;
+    font-size: 5rem;
+    background-color: #22569f;
+    padding-top: 27px;
+    color: white;
+}
+
+.choice i:hover {
+    background-color: white;
+    color: #22569f;
+    border: 2px dashed #22569f;
+}
+
+#userResult i,
+#compResult i {
+    height: 100px;
+    width: 100px;
+    background-color: #D32F2F;
+    font-size: 3rem;
+}
+
+#user_text,
+#comp_text {
+    color: black;
+}
+
+#result_text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
